@@ -7,10 +7,10 @@ def index():
     return jsonify({'message':'Hello, World!'})
 
 @app.route('/is_prime/<int:num>', methods=['GET'])
-def is_prime(number):
-    if number > 1:
-        for i in range(2, number):
-            if (number % i) == 0:
+def is_prime(num):
+    if num > 1:
+        for i in range(2, num):
+            if (num % i) == 0:
                 return 'False'
         else:
             return 'True'
