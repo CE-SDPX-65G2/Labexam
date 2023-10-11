@@ -1,4 +1,4 @@
-## Simple API using Flask
+## Exam Test
 
 ### Run using flask
 `python app/app.py`
@@ -8,3 +8,4 @@
 
 ### Run Unittest
 `python -m unit_test`
+
