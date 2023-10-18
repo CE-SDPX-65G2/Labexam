@@ -34,4 +34,3 @@ docker build -f Dockerfile .
 docker-compose -f compose.yaml up
 
 ```
-
