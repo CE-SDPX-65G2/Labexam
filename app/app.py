@@ -7,12 +7,11 @@ app = Flask(__name__)
 def index():
     return "Hello"
 
-@app.route('/mul5/<num>')
+@app.route('/mul5/<num>', methods=['GET'])
     # BEGIN: num_divide_5
 def num_divide_5(num):
     nums = float(num) * 5
     return str(nums)
-    # END: num_divide_5
 
 
 
