@@ -5,7 +5,7 @@ pip install flask
 pip install robotframework
 pip install robotframework-requests
 ```
-Dockerfile
+#Dockerfile
 ```
 FROM python:3.7-alpine
 WORKDIR /app
@@ -18,7 +18,7 @@ COPY . .
 CMD ["flask", "run"]
 ```
 
-Docker-compose
+#Docker-compose
 ```
 services:
   web:
@@ -27,3 +27,11 @@ services:
     ports:
       - "5000:5000"
 ```
+#CMD DOCKER BUILD AND DOCKER-COMPOSE
+```
+docker build -f Dockerfile .
+
+docker-compose -f compose.yaml up
+
+```
+
