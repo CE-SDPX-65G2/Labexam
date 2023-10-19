@@ -8,10 +8,12 @@ def index():
     return "Hello"
 
 #ตรงส่วนนี้
-@app.route('/mul5/<num>', methods=['GET'])
-def num_divide_5(num):
-    nums = float(num) * 5
-    return str(nums)
+@app.route('/isneg/<num>')
+def check_num(num):
+    if int(num) >= 0:
+        return "False"
+    else: 
+        return "True"
 ##################
 
 
