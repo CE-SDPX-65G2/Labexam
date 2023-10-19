@@ -7,12 +7,12 @@ app = Flask(__name__)
 def index():
     return "Hello"
 
+#ตรงส่วนนี้
 @app.route('/mul5/<num>', methods=['GET'])
-    # BEGIN: num_divide_5
 def num_divide_5(num):
     nums = float(num) * 5
     return str(nums)
-
+##################
 
 
 if __name__ == '__main__':
